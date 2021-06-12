@@ -1,4 +1,7 @@
+import axios from "axios";
 import "../styles/globals.css";
+
+axios.defaults.baseURL = process.env.SERVER_URL || "http://localhost:4000";
 
 function MyApp({ Component, pageProps }: any) {
     return (
