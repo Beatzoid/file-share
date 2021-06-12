@@ -440,6 +440,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"attr-accept@npm:^2.2.1":
+  version: 2.2.2
+  resolution: "attr-accept@npm:2.2.2"
+  checksum: e9c5d3580f6cae9c5c25c5c9c8660d344dd8bed25e77df7515c046864fe1aa4bb245e743ad46f55b85443ff53c95e378b3203c3e83f2168a2557e94d0552d458
+  languageName: node
+  linkType: hard
+
 "autoprefixer@npm:^10.2.6":
   version: 10.2.6
   resolution: "autoprefixer@npm:10.2.6"
@@ -813,6 +820,7 @@ __metadata:
     postcss: ^8.3.2
     react: 17.0.2
     react-dom: 17.0.2
+    react-dropzone: ^11.3.2
     tailwindcss: ^2.1.4
     typescript: ^4.3.2
   languageName: unknown
@@ -1330,6 +1338,15 @@ __metadata:
   dependencies:
     reusify: ^1.0.4
   checksum: 22822313d66aa7ef7fd392bf2da1cdf074dce902460bf73c0f0da6d58eb394ea8d74b8cce6c9466f5d659a51caeb732f4305cf8514ca8325490a4e3d873f5aa0
+  languageName: node
+  linkType: hard
+
+"file-selector@npm:^0.2.2":
+  version: 0.2.4
+  resolution: "file-selector@npm:0.2.4"
+  dependencies:
+    tslib: ^2.0.3
+  checksum: 45258fb1218ba9362e1fd0fdfd25e40b18fd2473adf8a45436245a78310dc76d2fdde95463afe1f4e9e8c0ef178837eb0e5335978c0db348bc1dec425e510429
   languageName: node
   linkType: hard
 
@@ -2908,7 +2925,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"prop-types@npm:15.7.2":
+"prop-types@npm:15.7.2, prop-types@npm:^15.7.2":
   version: 15.7.2
   resolution: "prop-types@npm:15.7.2"
   dependencies:
@@ -3044,6 +3061,19 @@ fsevents@~2.3.1:
   peerDependencies:
     react: 17.0.2
   checksum: 960a74ff6670766846a73097a599115963df1574833c59ca0c2fd909758ebe7a6214cd14f5e6aa63ce846d8f39fde7f3b80474ccfcfadc45dd7f3246364718c6
+  languageName: node
+  linkType: hard
+
+"react-dropzone@npm:^11.3.2":
+  version: 11.3.2
+  resolution: "react-dropzone@npm:11.3.2"
+  dependencies:
+    attr-accept: ^2.2.1
+    file-selector: ^0.2.2
+    prop-types: ^15.7.2
+  peerDependencies:
+    react: ">= 16.8"
+  checksum: 805c53808fbd3040edccdc3fef8418e0bc3d3bafe79ab47335de25fc419b9b93ba14d375795f7cc9ae418c175b1c7f26dc784550be1087375cf67171a5cc4053
   languageName: node
   linkType: hard
 
@@ -3695,6 +3725,13 @@ resolve@^1.20.0:
     typescript:
       optional: true
   checksum: 78341a27939de565e2754ff65ebb689743c16e3295528089d143c08d91842cf9029c3d6b3c95a9a20854a114a7904329d02c710d63f7ce4dbf671b8a3e560ac1
+  languageName: node
+  linkType: hard
+
+"tslib@npm:^2.0.3":
+  version: 2.3.0
+  resolution: "tslib@npm:2.3.0"
+  checksum: 7b4fc9feff0f704743c3760f5d8d708f6417fac6458159e63df3a6b1100f0736e3b99edb9fe370f274ad15160a1f49ff05cb49402534c818ff552c48e38c3e6e
   languageName: node
   linkType: hard
 
