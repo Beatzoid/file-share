@@ -4,10 +4,7 @@
     "description": "The server for file share",
     "main": "src/server.ts",
     "scripts": {
-        "dev": "ts-node-dev --clear src/server.ts",
-        "build": "tsc",
-        "postinstall": "tsc",
-        "start": "node dist/server.js"
+        "dev": "ts-node-dev --clear src/server.ts"
     },
     "engines": {
         "node": "16.2.0"
