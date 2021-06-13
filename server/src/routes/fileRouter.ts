@@ -4,6 +4,8 @@ import { v2 as cloudinary } from "cloudinary";
 import File from "../models/fileModel";
 import { handleError } from "../utils/errorHandle";
 
+import https from "https";
+
 const router = Router();
 const storage = multer.diskStorage({});
 
@@ -42,6 +44,37 @@ router.post("/upload", upload.single("file"), async (req, res) => {
             });
     } catch (err) {
         return handleError(err, res);
+    }
+});
+
+// @ts-ignore
+router.get("/:id", async (req, res) => {
+    try {
+        const id = req.params.id;
+        const file = await File.findById(id);
+        if (!file) return res.status(404).json({ message: "File not found" });
+
+        return res.status(200).json({
+            name: file.filename,
+            sizeInBytes: file.sizeInBytes,
+            format: file.format,
+            id: file.id
+        });
+    } catch (err) {
+        handleError(err, res);
+    }
+});
+
+// @ts-ignore
+router.get("/:id/download", async (req, res) => {
+    try {
+        const id = req.params.id;
+        const file = await File.findById(id);
+        if (!file) return res.status(404).json({ message: "File not found" });
+
+        https.get(file?.secureUrl, (fileStream) => fileStream.pipe(res));
+    } catch (err) {
+        handleError(err, res);
     }
 });
 

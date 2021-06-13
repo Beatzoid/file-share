@@ -826,6 +826,7 @@ __metadata:
     "@types/react": ^17.0.11
     autoprefixer: ^10.2.6
     axios: ^0.21.1
+    js-file-download: ^0.4.12
     next: 10.2.3
     postcss: ^8.3.2
     react: 17.0.2
@@ -2038,6 +2039,13 @@ fsevents@~2.3.1:
     merge-stream: ^2.0.0
     supports-color: ^8.0.0
   checksum: 7564f4c78c74e622ea41815eebf176af34e4579a449e3803d0266c7faed89f55bc602ecbac992b58634e0ded825acc79c8c5c9487a41062540573f21cb894120
+  languageName: node
+  linkType: hard
+
+"js-file-download@npm:^0.4.12":
+  version: 0.4.12
+  resolution: "js-file-download@npm:0.4.12"
+  checksum: 35470d0d90cc7deb9fd4ae4e58edda4370339f5620ffdf00d3f87ceac1f3574fc5b7bdeb38dbf3cb23ecdbc2592b5c0dfc29bc98085440ebcd36e1dad44c25fa
   languageName: node
   linkType: hard
 

@@ -73,10 +73,7 @@ export default function Home() {
                 )}
 
                 {!downloadPageLink && file && (
-                    <button
-                        className="p-2 my-5 bg-gray-900 rounded-md w-44 focus:outline-none"
-                        onClick={handleUpload}
-                    >
+                    <button className="button" onClick={handleUpload}>
                         {uploadState}
                     </button>
                 )}
@@ -84,10 +81,7 @@ export default function Home() {
                 {downloadPageLink && (
                     <div className="p-2 text-center">
                         <Download downloadPageLink={downloadPageLink} />
-                        <button
-                            className="p-2 my-5 bg-gray-900 rounded-md w-44 focus:outline-none"
-                            onClick={resetComponent}
-                        >
+                        <button className="button" onClick={resetComponent}>
                             Upload New File
                         </button>
                     </div>

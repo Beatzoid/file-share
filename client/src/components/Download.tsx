@@ -7,7 +7,9 @@ const Download: FunctionComponent<{ downloadPageLink: string }> = ({
         <div className="p-1">
             <h1 className="my-2 text-lg font-medium">Upload Complete</h1>
             <div className="flex space-x-3">
-                <span className="break-all">{downloadPageLink}</span>
+                <span className="break-all">
+                    <a href={downloadPageLink}>{downloadPageLink}</a>
+                </span>
                 <img
                     src="/images/copy.png"
                     alt=""
