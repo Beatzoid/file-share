@@ -32,7 +32,7 @@ jobs:
               run: cd server && tsc
 
             - name: Install Client Dependencies
-              run: cd web && yarn install
+              run: cd client && yarn install
 
             - name: Build Next.js Project
-              run: cd web && yarn build
+              run: cd client && yarn build
