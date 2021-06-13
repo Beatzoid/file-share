@@ -6,9 +6,6 @@
     "scripts": {
         "dev": "ts-node-dev --clear src/server.ts"
     },
-    "engines": {
-        "node": "16.2.0"
-    },
     "dependencies": {
         "cloudinary": "^1.26.0",
         "cors": "^2.8.5",
