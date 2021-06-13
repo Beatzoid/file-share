@@ -1,5 +1,6 @@
 node_modules
 .env
+dist
 
 # Yarn V2
 .yarn/*
