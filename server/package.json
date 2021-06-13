@@ -5,7 +5,12 @@
     "main": "src/server.ts",
     "scripts": {
         "dev": "ts-node-dev --clear src/server.ts",
-        "build": "tsc"
+        "build": "tsc",
+        "postinstall": "tsc",
+        "start": "node dist/server.js"
+    },
+    "engines": {
+        "node": "16.2.0"
     },
     "dependencies": {
         "cloudinary": "^1.26.0",
