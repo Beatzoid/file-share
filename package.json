@@ -1,7 +1,7 @@
 {
     "scripts": {
         "heroku-prebuild": "cd server && yarn install",
-        "start": "node server/dist/server.js"
+        "start": "cd server && yarn build && node dist/server.js"
     },
     "engines": {
         "node": "16.2.0",
