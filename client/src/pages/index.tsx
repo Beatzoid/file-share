@@ -8,7 +8,6 @@ import { promisify } from "util";
 const wait = promisify(setTimeout);
 
 export default function Home() {
-    console.log(process.env.SERVER_URL);
     const [file, setFile] = useState<any>(null);
     const [id, setId] = useState("");
     const [downloadPageLink, setDownloadPageLink] = useState("");
@@ -40,7 +39,6 @@ export default function Home() {
 
             setDownloadPageLink(data.downloadLink);
             setId(data.id);
-            console.log(downloadPageLink, id);
         } catch (err) {
             console.log(err.response.data);
 

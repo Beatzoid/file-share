@@ -5,7 +5,6 @@ const Dropzone: FunctionComponent<{ setFile: Dispatch<any> }> = ({
     setFile
 }) => {
     const onDrop = useCallback((acceptedFiles) => {
-        console.log(acceptedFiles[0]);
         setFile(acceptedFiles[0]);
     }, []);
 
