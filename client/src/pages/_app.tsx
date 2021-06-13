@@ -1,7 +1,7 @@
 import axios from "axios";
 import "../styles/globals.css";
 
-axios.defaults.baseURL = process.env.SERVER_URL;
+axios.defaults.baseURL = process.env.NEXT_PUBLIC_SERVER_URL;
 
 function MyApp({ Component, pageProps }: any) {
     return (
