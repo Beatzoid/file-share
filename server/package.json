@@ -4,7 +4,8 @@
     "description": "The server for file share",
     "main": "src/server.ts",
     "scripts": {
-        "dev": "ts-node-dev --clear src/server.ts"
+        "dev": "ts-node-dev --clear src/server.ts",
+        "build": "tsc"
     },
     "dependencies": {
         "cloudinary": "^1.26.0",
